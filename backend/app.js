@@ -5,10 +5,10 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const routes = require("./routes");
 
-const port = 3002;
+const port = process.env.PORT;
 const app = express();
 
-app.use(express.static("../frontend/build"));
+app.use(express.static("../frontend/dist"));
 
 app.use(cookieParser());
 app.use(express.json());
