@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
-const backendUrl = "http://localhost:3002"
+const backendUrl = "http://localhost:80"
 
 // https://vite.dev/config/
 export default defineConfig({
